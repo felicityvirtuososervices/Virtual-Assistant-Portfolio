@@ -25,7 +25,7 @@ import { motion, AnimatePresence } from 'motion/react';
 // Import components
 import TechStack from './components/TechStack';
 import CaseStudies from './components/CaseStudies';
-import Packages from './components/Packages';
+// import Packages from './components/Packages'; // Kept for future freelance use; not displayed publicly.
 import Testimonials from './components/Testimonials';
 
 // Import Felicity's permanent portrait
@@ -58,7 +58,7 @@ export default function App() {
     { name: 'Expertise', href: '#expertise' },
     { name: 'Tech Stack', href: '#tech-stack' },
     { name: 'Sample Work', href: '#sample-work' },
-    { name: 'Packages', href: '#packages' },
+    // { name: 'Packages', href: '#packages' }, // Hidden while actively job searching.
     { name: 'Testimonials', href: '#testimonials' },
   ];
 
@@ -213,10 +213,10 @@ export default function App() {
               {/* Action Buttons */}
               <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 pt-2">
                 <a
-                  href="#packages"
+                  href="#contact"
                   className="bg-[#132c2a] hover:bg-[#1e4441] text-white font-medium text-xs tracking-wider uppercase py-4 px-6 rounded-xl transition-colors duration-300 text-center flex items-center justify-center gap-1 shadow-sm"
                 >
-                  View Custom Packages & Rates
+                  Discuss Your Support Needs
                   <ArrowRight className="w-4 h-4" />
                 </a>
 
@@ -552,7 +552,7 @@ export default function App() {
         <CaseStudies />
       </section>
 
-      {/* 7. Retainer packages & sliders section */}
+      {/* Retainer packages & sliders section is temporarily disabled.
       <section id="packages" className="py-20 bg-[#faf8f5]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           
@@ -572,6 +572,7 @@ export default function App() {
 
         </div>
       </section>
+      */}
 
       {/* 8. Testimonials carousel section */}
       <section id="testimonials" className="py-20 bg-[#faf8f5] border-y border-stone-200/60">
@@ -595,7 +596,7 @@ export default function App() {
       </section>
 
       {/* 9. Booking CTA / Intake Section */}
-      <section className="py-20 md:py-24 bg-[#faf8f5] relative">
+      <section id="contact" className="py-20 md:py-24 bg-[#faf8f5] relative">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-stretch">
@@ -636,7 +637,7 @@ export default function App() {
                 <div>
                   <h4 className="text-xs font-bold text-stone-900 uppercase font-mono">Operational Sync Zone</h4>
                   <p className="text-xs text-stone-500 mt-1 leading-relaxed">
-                    Available for 25 to 40 hours standard retainer support depending on your team's volume. Onboarding takes less than 3 business days.
+                    Available for remote executive and operational support engagements, with working arrangements tailored to your team's requirements and priorities.
                   </p>
                 </div>
               </div>
@@ -695,14 +696,9 @@ export default function App() {
       <footer className="bg-[#faf8f5] border-t border-stone-200/50 py-10 text-center">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-4">
           <p className="text-xs text-stone-500 font-sans tracking-wide">
-            © 2026 Felicity Mukunju • Operations EA & Partner Portfolio. All Rights Reserved. Standard and Rates aligned to Remote Elite global standards.
+            © 2026 Felicity Mukunju • Executive Assistant & Operations Portfolio. All Rights Reserved.
           </p>
           <div className="flex items-center justify-center gap-4 text-xs font-mono font-bold uppercase text-stone-400 tracking-widest">
-            <span className="flex items-center gap-1">
-              <span className="w-1.5 h-1.5 rounded-full bg-[#bd4f3a]"></span>
-              Standard Retainer Certified
-            </span>
-            <span>•</span>
             <span className="flex items-center gap-1">
               <span className="w-1.5 h-1.5 rounded-full bg-[#bd4f3a]"></span>
               Professional Operations EA
